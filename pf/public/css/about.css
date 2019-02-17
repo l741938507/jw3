@@ -1,0 +1,152 @@
+.bottom{
+    width:100%;
+    height:1000px;
+    padding-top:50px;
+    background: #eeeeee;
+}
+.bottom-m{
+    width:75%;
+    height:700px;
+    margin:20px auto;
+}
+.l{
+    width:65%;
+    float:left;
+
+}
+.l-t{
+    width:100%;
+    height:35px;
+    line-height:35px;
+    background: #fff;
+    border-top:2px solid #1b6d85;
+    padding-left:20px;
+}
+.l-b{
+    margin-top:20px;
+    width:100%;
+    height:750px;
+    background: #fff;
+    padding-left:20px;
+}
+.about-article{
+    width:100%;
+    padding-top:30px;
+    padding-left:30px;
+}
+.about-article p{
+    line-height:2.3;
+    margin-top:10px;
+    font-size:15px;
+}
+.r{
+    width:28%;
+    float:left;
+    margin-left:30px;
+}
+.r-t{
+    width:100%;
+    height:350px;
+    padding: 70px 0 0 0;
+    background: #fff url(../../images/03.png)no-repeat;
+}
+.tp{
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.tp img{
+    width: 100px;
+    height:100px;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.ab-name {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 25px 10% 0 10%;
+}
+.ab-job {
+    text-align: center;
+    font-size: 15px;
+    color: #1abc9c;
+    margin-bottom: 0;
+    height: 34px;
+    overflow: hidden;
+    padding: 12px 10% 0 10%;
+}
+.ab-text {
+    text-align: left;
+    font-size: 15px;
+    color: #9a9a9a;
+    line-height: 24px;
+    margin-bottom: 0;
+    padding: 15px 10% 0 10%;
+    height: 110px;
+    overflow: hidden;
+}
+.r-b{
+    width:100%;
+    height:530px;
+    margin-top:20px;
+    background: #fff;
+}
+.readtitle, .ranktitle {
+    width: 100%;
+    background: #FFF;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.readart {
+    float: left;
+    width: 100%;
+    padding: 6px 3% 7px 3%;
+}
+.readart div {
+    width: 100%;
+    height: 150px;
+    float: left;
+    list-style: none;
+    margin: 5px 0;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #f2f2f2;
+}
+.readart div img {
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.readart div a span {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    overflow: hidden;
+    color: #FFF;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: rgba(0,0,0,0.5);
+    padding: 9px 10px;
+    text-shadow: 1px 1px 2px #000;
+    transition: all 0.2s ease-out;
+}
+.zxc {
+    width: 100%;
+    height: 50px;
+    line-height: 60px;
+    background: #333;
+    font-size: 14px;
+    color: #FFF;
+    text-align: center;
+}

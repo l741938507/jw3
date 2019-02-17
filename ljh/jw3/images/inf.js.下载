@@ -1,0 +1,196 @@
+/*
+ * 剑网3-同人概念站
+ * @Author : Yanximin
+ * @Created : 201411030930
+ * @modify : 0
+*/
+
+;(function($, undefined){
+	$.extend({inf:{
+		app_url:"//api-game.xoyo.com/jx3-fan-fiction-show/default/",
+		//首页轮播图
+
+		//获得人气排行（首页4条）
+		getline_func:function($fn,$params){
+
+			var that = this;
+			
+			$.ajax({
+				url:that.app_url+"getline",
+				type:"GET",
+				dataType:"jsonp",
+				data:$params,
+				success:function($data){
+					if($fn){$fn($data);}	
+				}
+			});
+		},
+		//获得视频最新推荐（首页4条）
+		getrevideo_func:function($params,$fn){
+			var that = this;
+			
+			$.ajax({
+				url:that.app_url+"getrevideo",
+				type:"GET",
+				dataType:"jsonp",
+				data:$params,
+				success:function($data){
+					if($fn){$fn($data);}	
+				}
+			});	
+		},
+		//获得图片最新推荐（首页4条）
+		getreimg_func:function($fn){
+			var that = this;
+			
+			$.ajax({
+				url:that.app_url+"getreimg",
+				type:"GET",
+				dataType:"jsonp",
+				success:function($data){
+					if($fn){$fn($data);}	
+				}
+			});	
+		},
+		//获得画图秀台（首页4条）
+		getshowimg_func:function($fn){
+			var that = this;
+			
+			$.ajax({
+				url:that.app_url+"getshowimg",
+				type:"GET",
+				dataType:"jsonp",
+				success:function($data){
+					if($fn){$fn($data);}	
+				}
+			});	
+		},
+		//获取音乐推荐（首页5条）
+		getshowmp_func:function($fn){
+			var that = this;
+			
+			$.ajax({
+				url:that.app_url+"getshowmp",
+				type:"GET",
+				dataType:"jsonp",
+				success:function($data){
+					if($fn){$fn($data);}	
+				}
+			});	
+		},
+		//获取官方原画壁纸（首页4条）
+		getoffiimg_func:function($fn){
+			var that = this;
+			
+			$.ajax({
+				url:that.app_url+"getoffiimg",
+				type:"GET",
+				dataType:"jsonp",
+				success:function($data){
+					if($fn){$fn($data);}	
+				}
+			});		
+		},
+		//获取音频、图片、视频列表（kind=1-图片，kind=2-音频，kind=3-视频，kind=4-cos，kind=5-手办）
+		getmedia_func:function($params, $fn){
+			var that = this;
+			
+			$.ajax({
+				url:that.app_url+"getmedia",
+				type:"GET",
+				dataType:"jsonp",
+				data:$params,
+				success:function($data){
+					if($fn){$fn($data);}	
+				}
+			});		
+		},
+		//根据id、kind获取作品详情
+		getmediabyid_func:function($params, $fn){
+			var that = this;
+			
+			$.ajax({
+				url:that.app_url+"getmediabyid",
+				type:"GET",
+				dataType:"jsonp",
+				data:$params,
+				success:function($data){
+					if($fn){$fn($data);}	
+				}
+			});	
+		},
+		//写评论
+		setcomment_func:function($params, $fn){
+			var that = this;
+			
+			$.ajax({
+				url:that.app_url+"setcomment",
+				type:"GET",
+				dataType:"jsonp",
+				data:$params,
+				success:function($data){
+					if($fn){$fn($data);}	
+				}
+			});	
+		},
+		//读评论
+		getcom_func:function($params, $fn){
+			var that = this;
+			
+			$.ajax({
+				url:that.app_url+"getcom",
+				type:"GET",
+				dataType:"jsonp",
+				data:$params,
+				success:function($data){
+					if($fn){$fn($data);}	
+				}
+			});
+		},
+		//点赞 
+		setpraise_func:function($params, $fn){
+			var that = this;
+			
+			$.ajax({
+				url:that.app_url+"setpraise",
+				type:"GET",
+				dataType:"jsonp",
+				data:$params,
+				success:function($data){
+					if($fn){$fn($data);}	
+				}
+			});	
+		},
+		//获得栏目的类型信息
+		getstyle_func:function($params, $fn){
+			var that = this;
+			
+			$.ajax({
+				url:that.app_url+"getstyle",
+				type:"GET",
+				dataType:"jsonp",
+				data:$params,
+				success:function($data){
+					if($fn){$fn($data);}	
+				}
+			});
+		},
+		banner_func:function($fn){
+			var that = this;
+
+			$.ajax({
+				url:that.app_url+"index-carousel",
+				type:"GET",
+				dataType:"jsonp",
+				success:function($data){
+					if($fn){$fn($data);}
+				}
+			});
+		},
+		//时间戳转换
+		unixtime:function($time){
+			var str = new Date(parseInt($time) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
+			return str;	
+		}
+	}});
+})(jQuery, undefined);

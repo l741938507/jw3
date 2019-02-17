@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>《剑网3》-老玩家回归指南</title>
+    <link rel="shortcut icon" href="../images/小图标15.gif"/>
+    <link rel="stylesheet" href="laowanjia.css"/>
+    <script src="../public/js/jquery-1.12.4.min.js"></script>
+    <script src="../js/laowanjia.js"></script>
+</head>
+<body>
+    <div style="display:none; position: absolute; width: 572px; left: 388px; top: 1100px; z-index: 1999;" class="aui_state_focus aui_state_lock">
+        <div class="aui_outer">
+        <div class="txz">
+            <div class="txz-t">
+                <p class="jstxz">金山通行证</p>
+                <p class="close"  style="cursor: pointer">x</p>
+            </div>
+            <div class="txz-b">
+                <div>
+                    <div class="txz-b-t">
+                        <div class="d"><a href="javascript:void(0);" id="a1" class="active">登录</a></div><div class="z"><a  href="javascript:void(0);" id="a2">注册</a></div>
+                    </div>
+                    <div class="dl dl1" style="display:block">
+                        <div>
+                            <p>通行证：
+                                <input type="text" /><a href="" style="color: #991b0e; text-decoration: underline;margin-left:8px;">马上注册</a>
+                            </p>
+                            <p style="display:none">请填写您的通行证账号</p>
+                        </div>
+                        <div>
+                            <p>&nbsp;&nbsp;&nbsp;密码：
+                                <input type="text" /><a href=""style="color: #991b0e; text-decoration: underline;margin-left:8px;">忘记你吗？</a>
+                            </p>
+                            <p style="display:none"> 请输入您的密码</p>
+                        </div>
+                        <button class="button">立即登录</button>
+                    </div>
+                    <div class="dl zhuce" style="display:none">
+                        <div>
+                            <p><font color="f0000">* </font>通行证账号:
+                                <input type="text" />
+                            </p>
+                        </div>
+                        <div>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="f0000">* </font>密码:
+                                <input type="text" />
+                            </p>
+                        </div>
+                        <div>
+                            <p>&nbsp;&nbsp;&nbsp;<font color="f0000">* </font>确认密码:
+                                <input type="text" />
+                            </p>
+                        </div>
+                        <div>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="f0000">* </font>手机号:
+                                <input type="text" />
+                            </p>
+                        </div>
+                        <div>
+                            <p><font color="f0000">* </font>短信验证码:
+                                <input type="text" />
+                            </p>
+                        </div>
+                        <div>
+                            <p>&nbsp;&nbsp;&nbsp;<font color="f0000">* </font>真实姓名:
+                                <input type="text" />
+                            </p>
+                        </div>
+                        <div>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="f0000">* </font>身份证:
+                                <input type="text" />
+                            </p>
+                        </div>
+                        <p style="margin-left:70px;font-size:12px;">
+                            <input type="checkbox" value="true">我已阅读并同意
+                        </p>
+                        <p style="margin-left:70px;">
+                            <a href="" style="font-size:12px;color: #1a273a;text-decoration: underline;">金山网络服务使用协议</a>
+                            <a href="" style="font-size:12px;color: #1a273a;text-decoration: underline;">金山通行证隐私权政策</a>
+                        </p>
+                        <button class="button" style="margin-left:70px;">确认提交</button>
+                        <p style="font-size:13px;margin-top:15px;">注册遇到问题请
+                            <a href="" style="color:#ff0000;text-decoration: underline">联系在线客服</a>
+                            | 手机/邮箱注册请
+                            <a href=""style="color:#ff0000;text-decoration: underline">点击此处</a>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="aui_content" style="display:none; position: absolute; width: 572px; left: 388px; top:2800px; z-index: 1999;">
+        <div style="margin: 6px; border: 1px solid #9ca1a7; padding: 24px 42px 66px; text-align: left;background: #fff">
+            <p class="faq-item-question">客户端启动或者运行过程中闪退</p>
+            <p class="close"  style="cursor: pointer">x</p>
+            <div class="faq-item-answer"><p align="left">除系统原因外一般是因为pack包有问题或者是配置太低, 内存不足引起，可以先进行客户端修复，无法解决则看看配置，只有4g内存的话下载低配config.ini配置文件放到jx3hdbeta\bin\zhcn_hd文件夹中替换掉本地文件后尝试。</p>
+                <p align="left">如果配置较高且无法用以上2种方法解决，则提供log进行排查。</p>
+            </div>
+        </div>
+    </div>
+    <div class="jx3-top">
+        <div class="inner-i">
+        <div class="l-nav">
+            <div class="jx3-logo">
+                <a href="../../ljh/jw3/index.html"><img src="../images/jx3-logo.png"/></a>
+            </div>
+            <div class="mend"></div>
+        </div>
+        <div class="r-nav">
+            <div class="t-links">
+                <a href="" class="hlight">登录</a>
+                <a href="" class="hlight">注册</a>
+                <a href="../充值/chongzhi.html" class="hlight">充值</a>
+                <a href="../老玩家回归指南/laowanjia.html" class="hlight">老玩家回归指南</a>
+                <a href="../充值/kefu.html" >客服</a>
+                <a href="../充值/zengzhifuwu.html" >增值业务</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="main-layout">
+        <div class="layout-container">
+            <div class="layout-header">
+                <div class="header-l">
+                    <div>
+                        <a href="">
+                            <img src="../images/header-l.png"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-r">
+                    <p><a href="../../ljh/index/index.html">进入官网</a></p>
+                </div>
+            </div>
+            <div class="layout-download">
+                <a href="../../wf/jw3_download/xiazai.html" class="download-buttion"></a>
+                <p class="download-title">客户端包含所有该游戏所需要的组件，如遇特殊情况或需要单独下载程序：</p>
+                    <ul class="download-tools">
+                    <li><a href="">DX程序</a></li>
+                    <li><a href="">VC 运行库</a></li>
+                    <li><a href="">VC运行库</a></li>
+                    <li>
+                        <a href="javascript:void(0);" onclick="showNetHelper()">网络助手</a>
+                        <div class="popup_wrap" style="display:none;"></div>
+                        <div class="popup_box pop_zhushou" style="display:none">
+                            <div class="pop_title">
+                                <span class="pop_close" onclick="closeNetHelpler()">
+                                    <img src="../images/close.png" >
+                                </span>
+                                <h3>网络助手</h3>
+                            </div>
+                            <div class="pop_table">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th width="250">版本</th>
+                                            <th width="180">下载</th>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>网络助手（win7专版）</td>
+                                            <td>
+                                                <a class="btn" href="">下载</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>网络助手（通用版）</td>
+                                            <td>
+                                                <a class="btn" href="">下载</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>.net库（如果win7专版助手运行失败，<br>请下载本库并下载通用版助手使用）</td>
+                                            <td>
+                                                <a class="btn" href="">下载</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">驱动精灵</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="game-self-service">
+        <div class="service-layout">
+            <div class="layout-container">
+                <div class="layout-content">
+                    <h1 class="service-title"></h1>
+                    <span class="service-inset"></span>
+                    <div class="service-wrap">
+                        <div class="service-user">
+                            <div class="service-unlogin">
+                                <a href="javascript:void(0);" class="service-login-btn" onclick="signin()"></a>
+                                <ul class="service-login-links">
+                                    <li><a href="javascript:void(0);" >马上注册</a></li>
+                                    <li><a href="" class="service-login-links-middle">找回账号</a></li>
+                                    <li><a href="">找回密码</a></li>
+                                </ul>
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="service-tools">
+                            <div class="service-tools-wrap">
+                                <div class="service-tools-list">
+                                    <div class="service-tools-left">
+                                        <div>
+                                            <div class="tools-title-wrap">
+                                                <span class="tools-title-desc">完善资料更能保障账号安全</span>
+                                                <h3 class="tools-title-text">账号资料完善&nbsp;</h3>
+                                            </div>
+                                            <div>
+                                                <div class="tools">
+                                                    <div class="tools-item">
+                                                        <div class="tools-icon">
+                                                            <div class="tools-icon"><span class="tools-phone"></span></div>
+                                                            <p class="tools-title">绑定身份证</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tools-item">
+                                                        <div class="tools-icon">
+                                                            <div class="tools-icon"><span class="tools-mail"></span></div>
+                                                            <p class="tools-title">绑定邮箱</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tools-item last">
+                                                        <div class="tools-icon">
+                                                            <div class="tools-icon"><span class="tools-card"></span></div>
+                                                            <p class="tools-title">绑定身份证</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tools-title-wrap">
+                                                <span class="tools-title-desc"><a href="">[进度查询]</a></span>
+                                                <h3 class="tools-title-text">申请GM操作&nbsp;</h3>
+                                            </div>
+                                            <div>
+                                                <div class="tools">
+                                                    <div class="tools-item">
+                                                        <div class="tools-icon">
+                                                            <div class="tools-icon"><span class="tools-gm-phone"></span></div>
+                                                            <p class="tools-title">找回手机</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tools-item">
+                                                        <div class="tools-icon">
+                                                            <div class="tools-icon"><span class="tools-gm-card"></span></div>
+                                                            <p class="tools-title">重置身份证</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tools-item last">
+                                                        <div class="tools-icon">
+                                                            <div class="tools-icon"><span class="tools-gm-card-update"></span></div>
+                                                            <p class="tools-title">升级身份证</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-tools-right">
+                                        <div>
+                                            <div class="tools-title-wrap">
+                                                <span class="tools-title-desc">修改绑定信息</span>
+                                                <h3 class="tools-title-text">修改账号信息&nbsp;</h3>
+                                            </div>
+                                            <div>
+                                                <div class="tools">
+                                                    <div class="tools-item">
+                                                        <div class="tools-icon">
+                                                            <div class="tools-icon"><span class="tools-update-phone"></span></div>
+                                                            <p class="tools-title">修改绑定手机</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tools-item last">
+                                                        <div class="tools-icon">
+                                                            <div class="tools-icon"><span class="tools-update-mail"></span></div>
+                                                            <p class="tools-title">修改绑定邮箱</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tools-title-wrap">
+                                                <span class="tools-title-desc">区服角色查询</span>
+                                                <h3 class="tools-title-text">区服角色查询&nbsp;</h3>
+                                            </div>
+                                            <div>
+                                                <div class="tools">
+                                                    <div class="tools-item">
+                                                        <div class="tools-icon">
+                                                            <div class="tools-icon tools-icon-hot"><span class="tools-check-role"></span></div>
+                                                            <p class="tools-title">修改绑定手机</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tools-item last">
+                                                        <div class="tools-icon">
+                                                            <div class="tools-icon"><span class="tools-lock-clear"></span></div>
+                                                            <p class="tools-title">修改绑定邮箱</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-tools-list">
+                                    <div class="tools-title-wrap">
+                                        <span class="tools-title-desc">账号安全服务</span>
+                                        <h3 class="tools-title-text">玲珑密保锁&nbsp;</h3>
+                                    </div>
+                                    <div>
+                                        <div class="secret-lock">
+                                            <div class="secret-lock-linglong">
+                                                <h3>实体版玲珑密保锁</h3>
+                                                <ul>
+                                                    <li><a href="" class="secret-lock-link">绑定实体版</a></li>
+                                                    <li><a href="" class="secret-lock-link">绑定实体版</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="secret-lock-mobile">
+                                                <h3>手机版玲珑密保锁</h3>
+                                                <ul>
+                                                    <li><a href="" class="secret-lock-mobile-link">下载手机版</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="hardware-requirement-layout">
+        <div class="layout-container">
+            <div class="layout-content">
+                <h3 class="hardware-requirement-title">配置要求</h3>
+                <div class="hardware-requirement">
+                    <div class="hardware-requirement-pc">
+                        <h1 class="pc-title">台式机配置要求</h1>
+                        <div class="pc-tab app-tabs">
+                            <ul class="ul">
+                                <li class="cur"><span>基础画质</span></li>
+                                <li class=""><span>高级画质</span></li>
+                                <li class=""><span>电影画质</span></li>
+                                <li class=""><span>极致画质</span></li>
+                            </ul>
+                            <div class="pc-content app-content">
+                                <div style="display:block;">
+                                    <a href="">
+                                        <div class="pc-effect"><p>基础画质</p></div>
+                                    </a>
+                                    <div class="pc-text-warp">
+                                        <p>CPU ：Intel(R) Core(TM) i3</p>
+                                        <p>内 存：4G</p>
+                                        <p>显 卡：GeForce GT 610</p>
+                                        <p>分辨率：1280*720</p>
+                                        <p>系 统：《剑网3》重制版基于DX11开发，不支持XP系统，建议使用win7、win8、win10 64位系统</p>
+                                    </div>
+                                </div>
+                                <div style="display:none;">
+                                    <a href="">
+                                        <div class="pc-effect"><p>高级画质</p></div>
+                                    </a>
+                                    <div class="pc-text-warp">
+                                        <p>CPU ：Intel(R) Core(TM) i3</p>
+                                        <p>内 存：4G</p>
+                                        <p>显 卡：GeForce GT 610</p>
+                                        <p>分辨率：1280*720</p>
+                                        <p>系 统：《剑网3》重制版基于DX11开发，不支持XP系统，建议使用win7、win8、win10 64位系统</p>
+                                    </div>
+                                </div>
+                                <div style="display:none;">
+                                    <a href="">
+                                        <div class="pc-effect"><p>电影画质</p></div>
+                                    </a>
+                                    <div class="pc-text-warp">
+                                        <p>CPU ：Intel(R) Core(TM) i3</p>
+                                        <p>内 存：4G</p>
+                                        <p>显 卡：GeForce GT 610</p>
+                                        <p>分辨率：1280*720</p>
+                                        <p>系 统：《剑网3》重制版基于DX11开发，不支持XP系统，建议使用win7、win8、win10 64位系统</p>
+                                    </div>
+                                </div>
+                                <div style="display:none;">
+                                    <a href="">
+                                        <div class="pc-effect"><p>极致画质</p></div>
+                                    </a>
+                                    <div class="pc-text-warp">
+                                        <p>CPU ：Intel(R) Core(TM) i3</p>
+                                        <p>内 存：4G</p>
+                                        <p>显 卡：GeForce GT 610</p>
+                                        <p>分辨率：1280*720</p>
+                                        <p>系 统：《剑网3》重制版基于DX11开发，不支持XP系统，建议使用win7、win8、win10 64位系统</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hardware-requirement-pocket">
+                        <h1 class="pocket-title">台式机配置要求</h1>
+                        <div class="pocket-tab app-tabs">
+                            <ul class="ul1">
+                                <li class="cur"><span>基础画质</span></li>
+                                <li class=""><span>高级画质</span></li>
+                                <li class=""><span>电影画质</span></li>
+                                <li class=""><span>极致画质</span></li>
+                            </ul>
+                            <div class="pocket-content app-content">
+                                <div style="display:block;">
+                                <a href="">
+                                    <div class="pocket-effect"><p>基础画质</p></div>
+                                </a>
+                                <div class="pocket-text-warp">
+                                    <p>CPU ：Intel(R) Core(TM) i3</p>
+                                    <p>内 存：4G</p>
+                                    <p>显 卡：GeForce GT 610</p>
+                                    <p>分辨率：1280*720</p>
+                                    <p>系 统：《剑网3》重制版基于DX11开发，不支持XP系统，建议使用win7、win8、win10 64位系统</p>
+                                </div>
+                            </div>
+                                <div style="display:none;">
+                                    <a href="">
+                                        <div class="pocket-effect"><p>高级画质</p></div>
+                                    </a>
+                                    <div class="pocket-text-warp">
+                                        <p>CPU ：Intel(R) Core(TM) i3</p>
+                                        <p>内 存：4G</p>
+                                        <p>显 卡：GeForce GT 610</p>
+                                        <p>分辨率：1280*720</p>
+                                        <p>系 统：《剑网3》重制版基于DX11开发，不支持XP系统，建议使用win7、win8、win10 64位系统</p>
+                                    </div>
+                                </div>
+                                <div style="display:none;">
+                                    <a href="">
+                                        <div class="pocket-effect"><p>电影画质</p></div>
+                                    </a>
+                                    <div class="pocket-text-warp">
+                                        <p>CPU ：Intel(R) Core(TM) i3</p>
+                                        <p>内 存：4G</p>
+                                        <p>显 卡：GeForce GT 610</p>
+                                        <p>分辨率：1280*720</p>
+                                        <p>系 统：《剑网3》重制版基于DX11开发，不支持XP系统，建议使用win7、win8、win10 64位系统</p>
+                                    </div>
+                                </div>
+                                <div style="display:none;">
+                                    <a href="">
+                                        <div class="pocket-effect"><p>极致画质</p></div>
+                                    </a>
+                                    <div class="pocket-text-warp">
+                                        <p>CPU ：Intel(R) Core(TM) i3</p>
+                                        <p>内 存：4G</p>
+                                        <p>显 卡：GeForce GT 610</p>
+                                        <p>分辨率：1280*720</p>
+                                        <p>系 统：《剑网3》重制版基于DX11开发，不支持XP系统，建议使用win7、win8、win10 64位系统</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="charge-mode-layout">
+        <div class="layout-container">
+            <div class="layout-content">
+                <p><img src="../images/charge-mode.jpg" width="1200" height="412"></p>
+                <p class="charge-mode-p">
+                    <a href="../充值/chongzhi.html" class="charge-mode-button">立即充值</a>
+                    <a href="../充值/zengzhifuwu.html"  class="charge-mode-button">增值服务</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="faq">
+        <div class="faq-layout">
+            <div class="layout-container">
+                <div class="layout-content">
+                    <span class="faq-inset"></span>
+                    <div class="faq-title">常见问题FAQ</div>
+                    <div class="faq-list">
+                        <ul id="faq-list">
+                            <li>
+                                <div class="faq-item">
+                                    <span class="faq-item-head"></span>
+                                    <dl class="faq-item-content">
+                                        <dt class="faq-item-question">                客户端启动或者运行过程中闪退
+                                        </dt>
+                                        <dd class="faq-item-answer">
+                                            <p align="left">除系统原因外一般是因为pack包有问题或者是配置太低, 内存不足引起，可以先进行客户端修复，无法解决则看看配置，只有4g内存的话下载低配config.ini配置文件放到jx3hdbeta\bin\zhcn_hd文件夹中替换掉本地文件后尝试。</p>
+                                            <p align="left">如果配置较高且无法用以上2种方法解决，则提供log进行排查。</p>
+                                        </dd>
+                                    </dl>
+                                    <div class="faq-item-blank"></div>
+                                    <span  class="faq-more-detail">查看详细</span>
+                                    <span class="faq-item-foot"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-item">
+                                    <span class="faq-item-head"></span>
+                                    <dl class="faq-item-content">
+                                        <dt class="faq-item-question">                 运行过程中弹窗提示请联系客服，并发送截图和客户端下rc_shader_msg文件
+
+                                        </dt>
+                                        <dd class="faq-item-answer">
+                                            <p align="left">找到客户端目录下jx3hdbeta\bin\zhcn_hd\cachedshaders文件夹，在其中找到弹窗提示中圈出来的这个名字的文件，将其删除后重新登录游戏即可。</p>
+                                            <p align="left">如果配置较高且无法用以上2种方法解决，则提供log进行排查。</p>
+                                        </dd>
+                                    </dl>
+                                    <div class="faq-item-blank"></div>
+                                    <span  class="faq-more-detail">查看详细</span>
+                                    <span class="faq-item-foot"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-item">
+                                    <span class="faq-item-head"></span>
+                                    <dl class="faq-item-content">
+                                        <dt class="faq-item-question">     登陆游戏时会卡在过图界面一直加载不进去，一段时间后就自动断开连接，或者登陆进游戏后角色不受控
+
+                                        </dt>
+                                        <dd class="faq-item-answer">
+                                            <p align="left">1.运行CMD命令提示符，输入netsh winsock reset回车，重置网络命令后重启电脑</p>
+                                            <p align="left">2.找个亲友或者朋友帮助等切换地图</p>
+                                            <p align="left">3.下载低配config.ini配置文件，将其替换到jx3hdbeta\bin\zhcn_hd文件夹内</p>
+                                            <p align="left">4.删除游戏目录下bin\zhcn_hd\cachedshaders。.</p>
+                                            <p align="left">如果还是无法解决，则下载文件【Jx3MiniDump.zip】，运行客户端到灰屏/黑屏的时候，提取LOG和DMP收集上报排查问题。</p>
+                                        </dd>
+                                    </dl>
+                                    <div class="faq-item-blank"></div>
+                                    <span  class="faq-more-detail">查看详细</span>
+                                    <span class="faq-item-foot"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-item">
+                                    <span class="faq-item-head"></span>
+                                    <dl class="faq-item-content">
+                                        <dt class="faq-item-question">  新建角色捏完脸型之后，点开始游戏按钮没有任何反应和提示
+
+                                        </dt>
+                                        <dd class="faq-item-answer">
+                                            <p align="left">关闭掉后台运行的360或电脑管家等有拦截功能的软件</p>
+                                        </dd>
+                                    </dl>
+                                    <div class="faq-item-blank"></div>
+                                    <span  class="faq-more-detail">查看详细</span>
+                                    <span class="faq-item-foot"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-item">
+                                    <span class="faq-item-head"></span>
+                                    <dl class="faq-item-content">
+                                        <dt class="faq-item-question">   启动客户端读条完毕之后进入登录画面的时候黑屏，且能听到背景音乐
+
+                                        </dt>
+                                        <dd class="faq-item-answer">
+                                            <p align="left">一般出现在首次登陆客户端的时候，在能听到音乐后按ESC之后等待5-10（最多延长到15分钟）分钟即可正常进入游戏。如果超过15分钟还是无法加载画面则：</p>
+                                            <p align="left">1.删除游戏目录下bin\zhcn_hd\cachedshaders。</p>
+                                            <p align="left">2.更新显卡驱动，并设置为独显启动游戏，并下载群共享的config.ini文佳覆盖到bin\zhcn_hd文件夹下</p>
+                                            <p align="left">3.修复游戏客户端。</p>
+                                            <p align="left">4.修复flash player。</p>
+                                            <p align="left">5.删除游戏目录下bin\zhcn_hd\userdata。</p>
+                                            <p align="left">如果还是无法解决，则下载文件【Jx3MiniDump.zip】，运行客户端到灰屏/黑屏的时候，提取LOG和DMP收集上报排查问题。</p>
+                                        </dd>
+                                    </dl>
+                                    <div class="faq-item-blank"></div>
+                                    <span  class="faq-more-detail">查看详细</span>
+                                    <span class="faq-item-foot"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-item">
+                                    <span class="faq-item-head"></span>
+                                    <dl class="faq-item-content">
+                                        <dt class="faq-item-question"> 启动客户端时弹窗提示您的显卡不支持DX11
+
+                                        </dt>
+                                        <dd class="faq-item-answer">
+                                            <p align="left">1.检查显卡是否达到配置要求，是否支持dx11</p>
+                                            <p align="left">2. 双显卡则需要设置高性能优先，例如N卡：【nvidia控制面板】-【管理3D设置】-【全局设置】-【高性能显卡处理器优先】</p>
+                                            <p align="left">3.检查显示器接口是否连接到显卡上而不是主板上</p>
+                                            <p align="left">4.若以上介符合要求则需要检查显卡驱动和DX11是否正常工作（更新显卡驱动，修复DX11）</p>
+                                        </dd>
+                                    </dl>
+                                    <div class="faq-item-blank"></div>
+                                    <span  class="faq-more-detail">查看详细</span>
+                                    <span class="faq-item-foot"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="faq-more" href="javascript:;">查看更多</a>
+                    <a class="faq-ask-question" href="" >找不到你要的答案？提问吧！</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="weixin-layout">
+        <div class="layout-container">
+            <div class="layout-content">
+                <div class="">
+                    <ul class="weixin-bar">
+                        <li><a href="">客服专区</a></li>
+                        <li>
+                            <a href="">微信客服</a>
+                            <div class="weixin-show" style="display:none;">
+                                <p class="weixin-para_spe">扫一扫关注</p>
+                                <img src="../images/kefuQR.jpg" />
+                                <div class="weixin-btn">微信客服</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="weixin-back-top"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="public_footer">
+        <div class="public_footer_box">
+            <p class="public_footer_top">
+                <span class="public_footer_top_left" style="float: left;" >
+                    <a href=""><img src="../images/jinshang.png" /></a>
+                    <a href=""><img src="../images/xishangju.png"/></a>
+                </span>
+                <span class="public_footer_top_right">
+                    <a href="">关于我们</a>|
+                    <a href="">服务协议</a>|
+                    <a href="">客服中心</a>|
+                    <a href="">联系我们</a>|
+                    <a href="">诚聘英才</a>|
+                </span>
+            </p>
+            <p class="public_footer_mid">
+                <span class="public_footer_mid_font">
+                    Copyright © 1999-
+                    <span class="J_pubFootYear">2018</span>
+                     成都西山居世游科技有限公司 版权所有
+                </span>
+            </p>
+            <p class="public_footer_mid">
+                <a href="" style="font-size:11px;color: #555;">增值电信业务经营许可证 川B2-20130104</a>
+                蜀ICP备14009198号-2
+                <a href="" style="font-size:11px;color: #555;">川公网安备 51019002000850号 </a>
+                <a href="" class="J_whbBeianFootLink" style="font-size:11px;color: #555;">
+                    <span class="J_whbBeianFootNum">文网游备字〔2017〕Ｃ-RPG 0031 号 </span>
+                    <img src="../images/public_footer-img.png" style="display: inline-block;vertical-align: middle;" />
+                </a>
+            </p>
+            <p class="public_footer_mid">
+                <a href="" style="font-size:11px;color: #555;">网络文化经营许可证 川网文[2015]1923-059号</a>
+                <a href="" style="font-size:11px;color: #555; padding:0 2px;" >互联网出版许可证 新出网证<川>字027号</a>
+            </p>
+            <p class="public_footer_mid">
+                <a href="" style="font-size:11px;color: #555;">信息系统安全等级保护备案证书编号：510116990037</a>
+                <a href="" style="font-size:11px;color: #555; padding:0 2px;" >《网络游戏管理暂行办法》第九条内容</a>
+                <a href="" style="font-size:11px;color: #555; padding:0 2px;" >《中华人民共和国网络安全法》</a>
+            </p>
+            <p class="public_footer_bot">
+                <span class="public_footer_top_left" style="float: left;" >
+                    <a href="" style="float:left;"><img src="../images/kx.png" /></a>
+                    <a href="" style="float:left;"><img src="../images/j.png" /></a>
+                    <span style="display: block; margin-left: -95px;margin-left:0\0;*margin-left:0; float:left;padding-left:95px;">
+                        婉拒18岁以下未成年用户进入游戏 健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑
+                        <br/>
+                        沉迷游戏伤身 合理安排时间 享受健康生活 进入：
+                        <a hreef="" style="color: #555; padding: 0 2px; ">未成年人家长监护系统</a>
+                        <a href="" style="color: #cc0e2b; padding: 0 2px; text-decoration: none">违法和不良信息举报中心</a>
+                    </span>
+                </span>
+
+            </p>
+            <p></p>
+        </div>
+    </div>
+
+</body>
+</html>

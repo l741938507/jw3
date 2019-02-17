@@ -1,0 +1,343 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color:rgb(0,0,0);
+}
+a:hover{
+    text-decoration: none;
+}
+.header{
+    width:100%;
+    height: 36px;
+    border: 1px solid #ebebeb;
+    background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
+}
+.header .container{
+    height: 36px;
+    margin:0 auto;
+    position: relative;
+}
+.slogan{
+    font-size: 14px;
+    color: #b62929;
+    line-height: 36px;
+}
+.header-content{
+    display: table;
+    height: 36px;
+    float: right;
+}
+.no-padding-margin {
+    padding: 0!important;
+    margin: 0!important;
+}
+.text-underline {
+    text-decoration: underline;
+}
+.high-light-color {
+    color: #c33;
+}
+.m-item{
+    line-height: 36px;
+    display: inline-block;
+    padding-left: 16px;
+    margin: 0 10px;
+    position: relative;
+}
+.bg{
+    background: url(../images/icon.png) no-repeat left center;
+    background-position: center right;
+    padding-right: 16px;
+}
+.cz{
+    position: absolute;
+    right: 260px;
+    top: 34px;
+    z-index: 9;
+    background: #f7f7f7;
+    border: 1px solid #ebebeb;
+}
+.cz-f{
+    width: 187px;
+    float: left;
+    border-right: 1px solid #ebebeb;
+}
+.cz-title{
+    width:100%;
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 48px;
+    line-height: 48px;
+    background: #f3f3f3;
+    border-bottom: 1px solid #ebebeb;
+}
+.cz-content{
+    padding: 10px 0 10px 25px;
+}
+.list-wrap{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+}
+.list-wrap a{
+    color:black;
+}
+.list-wrap a:hover{
+    color: #b62929;
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    height:989px;
+    overflow: hidden;
+    margin-bottom: 85px;
+}
+.page-component{
+    width:100%;
+    height:954px;
+}
+.signup{
+    width:100%;
+    height:100%;
+}
+.xoyo-pc-Signup-wrap{
+    width: 670px;
+    margin: 25px auto 10px;
+    overflow: hidden;
+}
+.xoyo-pc-Signup-logo{
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.xoyo-pc-Signup-page-title{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+.xoyo-pc-Signup{
+    width: 670px;
+    height: 870px;
+    margin: 10px auto 0;
+    padding-top: 16px;
+    background:url(../images/bg-signup.jpg)no-repeat center top;
+}
+.xoyo-pc-Signup-nav{
+    width: 570px;
+    margin: 0 auto;
+}
+.tabs-box{
+    width: 570px;
+    height: 65px;
+    border-bottom: 1px solid #ececec;
+    overflow: hidden;
+}
+.tabs-box .tab{
+    width: 190px;
+    height: 65px;
+    text-align: center;
+    line-height: 63px;
+    font-size: 18px;
+    float: left;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.tabs-box .tab.active{
+    color: #b62929;
+    border-bottom: 5px solid #b62929;
+}
+.tab-content-box{
+    width: 510px;
+    height: 720px;
+    position: relative;
+    overflow: hidden;
+    margin: 25px;
+}
+.tab-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    opacity: 1;
+    transition: right 0.3s ease;
+}
+
+ .tab-content.active{
+    right: 0;
+    opacity: 1;
+    transition: right 0.3s ease;
+}
+ .el-form-item{
+     margin-bottom: 22px;
+ }
+.el-form-item__label {
+    text-align: right;
+    float: left;
+    font-size: 14px;
+    color: #606266;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+    vertical-align: middle;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+.el-form-item__label:before {
+    content: '*';
+    color: #f56c6c;
+    margin-right: 4px;
+}
+.el-form-item__content {
+    line-height: 40px;
+    position: relative;
+    font-size: 14px;
+}
+.el-form-item__content::before {
+    display: table;
+    content: "";
+}
+.el-input {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+}
+.el-input__inner {
+    -webkit-appearance: none;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    width: 100%;
+}
+.el-input-group {
+    line-height: normal;
+    display: inline-table;
+    width: 100%;
+    border-collapse: separate;
+    vertical-align: middle;
+}
+.el-input-group>.el-input__inner {
+    vertical-align: middle;
+    display: table-cell;
+}
+.el-input-group__append{
+    background-color: #f5f7fa;
+    color: #909399;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    border: 1px solid #dcdfe6;
+    padding: 0 20px;
+    width: 1px;
+    white-space: nowrap;
+}
+.el-input-group__append button.el-button{
+    border-color: transparent;
+    background-color: transparent;
+    color: inherit;
+    border-top: 0;
+    border-bottom: 0;
+}
+.xoyo-pc-SendCode{
+    border: none;
+    cursor: pointer;
+}
+.el-input-group--append .el-input__inner{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+input{
+    font: 100% tahoma,\5b8b\4f53,arial;
+}
+.title{
+    font-size: 14px;
+    padding-left: 17px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.el-input-wrap a:hover{
+    color: #c33;
+    text-decoration: none;
+}
+.large-red-btn{
+    width: 228px;
+    height: 53px;
+    line-height: 53px;
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 0;
+    background: #b62929;
+    transition: background .3s ease;
+}
+.large-red-btn:hover {
+    background: #d25b5b;
+    color:#fff;
+    text-decoration: none;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+}
+
+
+.footer{
+    padding: 20px 0;
+    background: #000000;
+    color: #ffffff;
+}
+.footer .container{
+    overflow: hidden;
+    color: #868686;
+}
+.footer .container .footer-left{
+    width: 310px;
+    overflow: hidden;
+    text-align: right;
+}
+.fl {
+    float: left;
+}
+.footer .container .footer-right{
+    margin-left: 35px;
+}
+.footer .container .footer-right-nav a{
+    line-height: 24px;
+    color: #cdb670;
+    margin-right: 30px;
+}
+.footer .container .footer-right .licence{
+    line-height: 24px;
+    margin-bottom:0 !important;
+}
+.footer .container .footer-right .licence a {
+    color: #868686;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
